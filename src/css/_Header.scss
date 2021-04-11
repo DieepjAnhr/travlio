@@ -1,0 +1,259 @@
+//Header
+.main-header {
+    background-image: url("http://demoapus-wp1.com/travlio/wp-content/uploads/2020/08/banner-3.jpg");
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+//Menu
+.main-menu {
+    display: block;
+    margin: 0px;
+    padding: 0%;
+    height: 100px;
+    background-color: rgb(230, 230, 230);
+    .menu-items {
+        display: block;
+        margin: 0px;
+        padding: 0px 15%;
+        .menu-item {
+            display: inline-block;
+            padding: 35px 1%;
+            margin: 0px;
+            height: 100px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 15px;
+            .home-items {
+                display: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            .tours-items {
+                display: none;
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        .button-signin {
+            position: absolute;
+            right: 15%;
+        }
+        .logo {
+            padding-top: 0px;
+            margin-right: 5%px;
+            img {
+                height: 45px;
+            }
+        }
+        .menu-item:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+        .item-home:hover {
+            .home-items {
+                display: block;
+                border-radius: 8px;
+                background-color: rgb(230, 230, 230);
+                color: black;
+                margin: 0px;
+                padding: 0px 20px 0px 20px;
+                width: 200px;
+                text-align: left;
+                position: absolute;
+                top: 90px;
+                box-shadow: 0 0 4px black;
+            }
+            .home-item {
+                display: block;
+                margin: 0px;
+                padding: 10px;
+            }
+            .home-item:hover {
+                display: block;
+                margin: 0px;
+                padding: 10px;
+                color: orangered;
+            }
+        }
+        .item-tours:hover {
+            .tours-items {
+                display: block;
+                border-radius: 8px;
+                background-color: rgb(230, 230, 230);
+                color: black;
+                margin: 0px;
+                padding: 0px 20px 0px 20px;
+                width: 200px;
+                text-align: left;
+                position: absolute;
+                top: 90px;
+                box-shadow: 0 0 4px black;
+            }
+            .tours-item {
+                display: block;
+                margin: 0px;
+                padding: 10px;
+            }
+            .tours-item:hover {
+                display: block;
+                margin: 0px;
+                padding: 10px;
+                color: orangered;
+            }
+        }
+    }
+}
+
+//Banner
+.main-banner {
+    background-color: rgba(0, 0, 0, 0.55);
+    display: block;
+    margin: 0px;
+    padding: 0px 10%;
+    .banner-content {
+        display: block;
+        margin: 0px;
+        padding: 300px 0px;
+        text-align: center;
+        h1 {
+            display: block;
+            margin: 0px;
+            padding: 0px 0px;
+            color: white;
+            font-family: "Montserrat",Arial,sans-serif;
+            font-weight: 600;
+            font-size: 50px;
+        }
+        p {
+            display: block;
+            margin: 0px;
+            padding: 0px 0px;
+            color: white;
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+        .seach {
+            display: block;
+            margin: 50px 0px 0px 0px;
+            padding: 0px;
+            border-radius: 9px;
+            background-color: white;
+            height: 80px;
+            text-align: center;
+            .seach-item {
+                display: inline-block;
+                margin: 0px;
+                padding: 2% 10px;
+                width: 20%;
+                height: 100%;
+                font-size: 15px;
+                font-weight: 500;
+                border-right: 0.2px solid;
+                position: relative;
+                .location-rent-items {
+                    display: block;
+                    border-radius: 9px;
+                    color: black;
+                    width: 100%;
+                    height: 140px;
+                    background-color: white;
+                    position: absolute;
+                    top: 100%;
+                    left: 0%;
+                    overflow: auto;
+                    .location-rent-item {
+                        padding: 5px;
+                    }
+                    .location-rent-item:hover {
+                        color: orangered;
+                    }
+                }
+            }
+            .seach-item:hover {
+                cursor: pointer;
+                color: orangered;
+                border-right: 0.2px solid black;
+            }
+            .seach-button {
+                background-color: #ff5722;
+                border-radius: 0px 9px 9px 0px;
+                color: white;
+                border-right-style: none;
+            }
+            .seach-button:hover {
+                background-color: #ff3022;
+                color: white;
+                border-right: 0.2px solid #ff3022;
+            }
+        }
+    }
+}
+
+//infor-header
+.infor-items {
+    display: block;
+    margin: 0px;
+    padding: 0px 15%;
+    background-color: rgb(230, 230, 230);
+    .infor-item {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px 20px;
+        .items {
+            display: inline-block;
+            .title-item {
+                font-size: 17px;
+            }
+            .desc-item {
+                font-size: 15px;
+            }
+        }
+        .icon {
+            padding: 20px;
+            font-size: 50px;
+        }
+    }
+    .infor-item:hover{
+        .icon {
+            animation: bounce 0.7s;
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+    95% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes wipe-top {
+    0% {
+        transform: scaleY(0);
+    }
+    25% {
+        transform: scaleY(0.25);
+    }
+    50% {
+        transform: scaleY(0.5);
+    }
+    75% {
+        transform: scaleY(0.75);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
